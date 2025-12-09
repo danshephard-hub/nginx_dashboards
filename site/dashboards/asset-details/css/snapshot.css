@@ -1,0 +1,24 @@
+
+.ad-summary {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+
+.ad-info-item {
+    position:relative;
+    padding-top:20px;
+    display:inline-block;
+	margin-top:-20px;
+}
+.ad-info-item-badge{
+    position: absolute;
+    right:-10px;
+    top:10px;
+    background:red;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color:white;
+    padding:5px 10px;
+    font-size:12px;
+}
