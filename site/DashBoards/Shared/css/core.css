@@ -1,0 +1,286 @@
+
+body {
+  padding-top: 60px;
+  background-color: whitesmoke;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#map-container {
+	height: 400px;
+/*
+	max-width: 50%;
+	align-self: right;
+*/
+}
+
+.dt-buttons {
+	position: absolute !important;
+	left: -10000px !important;
+}
+
+
+/*
+ * Callouts
+ */
+
+/* Common styles for all types */
+.ah-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+.ah-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.ah-callout p:last-child {
+  margin-bottom: 0;
+}
+.ah-callout code {
+  border-radius: 3px;
+}
+
+/* Tighten up space between multiple callouts */
+.ah-callout + .ah-callout {
+  margin-top: -5px;
+}
+
+/* Variations */
+.ah-callout-danger {
+  border-left-color: #ce4844;
+}
+.ah-callout-danger h4 {
+  color: #ce4844;
+}
+.ah-callout-warning {
+  border-left-color: #aa6708;
+}
+.ah-callout-warning h4 {
+  color: #aa6708;
+}
+.ah-callout-success {
+  border-left-color: #5cb85c;
+}
+.ah-callout-success h4 {
+  color: #5cb85c;
+}
+.ah-callout-info {
+  border-left-color: #1b809e;
+}
+.ah-callout-info h4 {
+  color: #1b809e;
+}
+
+
+/*
+ * Table cell slices
+ */
+ 
+.slice {
+	border-left-width: 4px !important; 
+}
+
+.slice-danger {
+	border-left-color: #ce4844 !important;
+}
+.slice-warning {
+	border-left-color: #aa6708 !important;
+}
+.slice-success {
+	border-left-color: #5cb85c !important;
+}
+.slice-info {
+	border-left-color: #1b809e !important;
+}
+
+/*
+ * Cards
+ */
+ 
+.ah-card {
+	margin-bottom: 22px;
+    background-color: #ffffff;
+    border: 1px solid #d3e0e9; /*transparent;*/
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.ah-card-header {
+	padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+	
+	height: 150px;
+    background-size: cover;
+}
+
+.ah-card > .ah-card-header {
+	color: #1e3948;
+    background-color: #f5f5f5;
+    border-color: #d3e0e9;
+}
+
+.ah-card-avatar {
+	max-width: 100px;
+    margin-top: -70px;
+    margin-bottom: 5px;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.ah-card-body {
+	padding: 15px;
+}
+
+.ah-card-body h5 {
+	font-weight: bold;
+}
+
+.ah-card-title {
+	margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: inherit;
+ }
+
+.ah-feeditem-icon {
+	width: 48px;
+	height: 48px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	float: left;
+}
+
+.ah-feeditem-label {
+	padding-left: 54px;
+	min-height: 48px;
+	font-weight: bold;
+}
+
+.ah-feeditem-date {
+	float: right;
+}
+
+.ah-feeditem-button-group {
+	border-top: 1px solid LightGray;
+	margin-top: 5px;
+	padding: 5px;
+}
+
+.ah-feeditem-button-group a {
+	color: SteelBlue;
+}
+
+.ah-appointment-list {
+	color: DarkGrey;
+}
+
+.ah-bullet {
+	margin-right: 16px;
+}
+
+.ah-card.affix {
+	width: 16%;
+}
+
+@media screen and (max-width: 981px) {
+	.ah-card.affix {
+		width: 24%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.ah-card.affix {
+		position: static;
+		width: auto;
+		top: 0;
+	}
+}
+
+/* Tiles */
+
+.ah-tile {
+	min-height: 115px;
+	padding: 8px;
+	margin: 3px 0px 3px 0px;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	background-position: calc(100% - 10px) 10px;
+}
+
+.ah-tile-alt-1 {
+	min-height: 235px;
+	background-color: #6CD5FA;
+	background-image: url('../img/tiles/contact.png');
+	color: rgba(0, 0, 0, .5) ;
+}
+
+.ah-tile-alt-2 {
+	background-color: #5A98FA;
+	background-image: url('../img/tiles/repair.png');
+	color: rgba(0, 0, 0, .5) ;
+}
+
+.ah-tile-alt-3 {
+	background-color: #4032E6;
+	background-image: url('../img/tiles/repair.png');
+	color: rgba(255, 255, 255, .5) ;
+}
+
+.ah-tile-alt-4 {
+	background-color: #8E39EF;
+	background-image: url('../img/tiles/rent.png');
+	color: rgba(255, 255, 255, .5) ;
+}
+
+.ah-tile-alt-5 {
+	background-color: #C73E87;
+	background-image: url('../img/tiles/rent.png');
+	color: rgba(255, 255, 255, .5) ;
+}
+
+.ah-tile-alt-6 {
+	background-color: #DB5758;
+	background-image: url('../img/tiles/call.png');
+	color: rgba(255, 255, 255, .5) ;
+}
+
+.ah-tile-alt-7 {
+	background-color: #E5734C;
+	background-image: url('../img/tiles/case.png');
+	color: rgba(0, 0, 0, .5) ;
+}
+
+.ah-tile-alt-8 {
+	background-color: #EC9F4A;
+	color: rgba(0, 0, 0, .5) ;
+}
+
+.ah-tile-alt-9 {
+	background-color: #F1B64D;
+	color: rgba(0, 0, 0, .5) ;
+}
+
+.ah-tile-alt-10 {
+	background-color: #FDE775;
+	color: rgba(0, 0, 0, .5) ;
+}
+
+.ah-tile-alt-11 {
+	background-color: #EFE86F;
+	color: rgba(0, 0, 0, .5) ;
+}
+
+.ah-tile-alt-12 {
+	background-color: #B5D267;
+	color: rgba(0, 0, 0, .5) ;
+}
+
+.ah-tile-title {
+	font-size: 200%;
+}
